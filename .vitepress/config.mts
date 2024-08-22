@@ -48,8 +48,8 @@ export default defineConfigWithTheme<ThemeConfig>({
   sitemap: {
     hostname: 'https://vitepress-theme-bluearchive.vercel.app',
   },
-  title: "Sensei's 部落格",
-  description: "Sensei's 部落格",
+  title: "peg195's 个人博客",
+  description: "peg195's 个人博客",
   themeConfig: {
     // navBar
     menuList: [
@@ -58,21 +58,21 @@ export default defineConfigWithTheme<ThemeConfig>({
     ],
 
     //banner区配置
-    name: "Sensei's 部落格",
-    welcomeText: 'Hello, VitePress',
-    motto: '何気ない日常で、ほんの少しの奇跡を見つける物語。',
+    name: "peg195's 个人博客",
+    welcomeText: 'Hello, World！',
+    motto: '所在皆是奇迹的起点。',
     social: [
-      { icon: 'github', url: 'https://github.com/' },
-      { icon: 'bilibili', url: 'https://www.bilibili.com/' },
-      { icon: 'qq', url: 'https://im.qq.com/index/' },
-      { icon: 'wechat', url: 'https://weixin.qq.com/' },
+      { icon: 'github', url: 'https://jihulab.com/peg' },
+      { icon: 'bilibili', url: 'https://space.bilibili.com/2068641947' },
+      { icon: 'qq', url: '#' },
+      { icon: 'wechat', url: '#' },
     ],
 
     //footer配置
     footerName: 'Sensei',
     poweredList: [
       { name: 'VitePress', url: 'https://github.com/vuejs/vitepress' },
-      { name: 'GitHub Pages', url: 'https://docs.github.com/zh/pages' },
+      { name: 'Netlify', url: 'https://netlify.com' },
     ],
 
     //gitalk配置
