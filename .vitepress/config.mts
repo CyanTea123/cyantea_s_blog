@@ -59,7 +59,7 @@ export default defineConfigWithTheme<ThemeConfig>({
 
     //banner区配置
     name: "peg195's 个人博客",
-    welcomeText: 'Hello, World！',
+    welcomeText: '为折腾而折腾',
     motto: '所在皆是奇迹的起点。',
     social: [
       { icon: 'github', url: 'https://jihulab.com/peg' },
