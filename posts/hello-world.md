@@ -1,6 +1,6 @@
 ---
 title: Hello world
-date: 2023-08-16 19:45
+date: 2023-08-16
 tags: [helloworld]
 ---
 hello world!
