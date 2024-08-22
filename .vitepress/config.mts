@@ -69,18 +69,18 @@ export default defineConfigWithTheme<ThemeConfig>({
     ],
 
     //footer配置
-    footerName: 'Sensei',
+    footerName: 'peg195',
     poweredList: [
       { name: 'VitePress', url: 'https://github.com/vuejs/vitepress' },
       { name: 'Netlify', url: 'https://netlify.com' },
     ],
 
     //gitalk配置
-    clientID: 'Ov23lia9U9wFN3WMyoKK',
-    clientSecret: 'b2418ab598c188c43a247c99e728dd2735d58c3b',
-    repo: 'vitepress-theme-bluearchive',
-    owner: 'Alittfre',
-    admin: ['Alittfre'],
+    clientID: '#',
+    clientSecret: '#',
+    repo: '#',
+    owner: 'peg195',
+    admin: ['peg195'],
   },
   markdown: {
     theme: 'github-light',
