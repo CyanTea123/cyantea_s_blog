@@ -2,6 +2,13 @@
 title: 关于我使用ZorinOS一周后的感受
 date: 2024-08-24
 tags: [linux,ZorinOS]
+head:
+  - - meta
+    - name: description
+      content: peg195's 个人博客
+  - - meta
+    - name: keywords
+      content: peg195, peg195's 个人博客, linux, ZorinOS, debian, ubuntu
 ---
 对ZorinOS这个系统，我评价为：依托答辩。
 ---
