@@ -73,6 +73,8 @@ export default defineConfigWithTheme<ThemeConfig>({
     poweredList: [
       { name: 'VitePress', url: 'https://github.com/vuejs/vitepress' },
       { name: 'Netlify', url: 'https://netlify.com' },
+      { name: 'Gitlab', url: 'https://gitlab.com' },
+      { name: '萌ICP备20230195号', url: 'https://icp.gov.moe/?keyword=20230195' },
     ],
 
     //gitalk配置
