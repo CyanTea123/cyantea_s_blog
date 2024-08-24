@@ -2,6 +2,13 @@
 title: 一个关于hinas换路由器也能连接的设想
 date: 2024-08-23
 tags: [hinas]
+head:
+  - - meta
+    - name: description
+      content: peg195's 个人博客
+  - - meta
+    - name: keywords
+      content: peg195, peg195's 个人博客, hinas, ecoo, 海纳思
 ---
 使用Zerotier或tailscale这类虚拟私人网络服务也许能够实现让刷了hinas的机顶盒在换路由器后也能使用虚拟内网IP从外部连接
 ---
