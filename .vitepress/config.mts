@@ -73,7 +73,7 @@ export default defineConfigWithTheme<ThemeConfig>({
     poweredList: [
       { name: 'VitePress', url: 'https://github.com/vuejs/vitepress' },
       { name: 'Netlify', url: 'https://netlify.com' },
-      { name: 'Gitlab', url: 'https://gitlab.com' },
+      { name: 'MCICP备0000000000号', url: 'https://icp.mcsite.cc/mc/0000000000.html' },
       { name: '萌ICP备20230195号', url: 'https://icp.gov.moe/?keyword=20230195' },
     ],
 
