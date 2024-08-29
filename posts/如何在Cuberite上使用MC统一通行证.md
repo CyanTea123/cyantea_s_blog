@@ -69,5 +69,5 @@ UUIDToProfileAddress=/你的服务器ID/sessionserver/session/minecraft/profile/
 <code>
 这部分也是与MojangAPI对应，没什么好说的。  
 通过上面的修改过程，你应该就可以在Cuberite上使用MC统一通行证了。我不100%确定上面内容在你的服务器中的可用性，不保证不出问题（毕竟不是官方支持）。  
-要让玩家使用MC统一通行证进入你的服务器，记得把`[Authentication]`下的`Authenticate`的值设为1。
+要让玩家使用MC统一通行证进入你的服务器，记得把`[Authentication]`下的`Authenticate`的值设为1。  
 当然，如果你想让不用MC统一通行证的玩家也能进入你的服务器，那你随意。但如果`Authenticate`为0，那么你做的步骤没有任何意义，皮肤不会显示，MC统一通行证也会被认为是盗版，不会加载皮肤。所以我还是推荐你让玩家使用MC统一通行证进入验证服务器设置为MC统一通行证并且开着帐号验证的服务器，这样既能让离线玩家以像正版的方式进入，也能让你更方便的管理玩家。
