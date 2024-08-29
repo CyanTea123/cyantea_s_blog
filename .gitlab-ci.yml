@@ -1,11 +1,11 @@
 # The Docker image that will be used to build your app
-image: node:10
+image: node:20
 # Functions that should be executed before the build script is run
 pages:
   script:
-    - npm install
-    - npm run dev
-    - npm run build
+    - pnpm install
+    - pnpm run dev
+    - pnpm run build
   artifacts:
     paths:
       # The folder that contains the files to be exposed at the Page URL
