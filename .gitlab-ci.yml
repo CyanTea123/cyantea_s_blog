@@ -3,9 +3,9 @@ image: node:20
 # Functions that should be executed before the build script is run
 pages:
   script:
-    - pnpm install
-    - pnpm run dev
-    - pnpm run build
+    - npm install
+    - npm run dev
+    - npm run build
   artifacts:
     paths:
       # The folder that contains the files to be exposed at the Page URL
