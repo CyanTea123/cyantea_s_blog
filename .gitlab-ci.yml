@@ -4,6 +4,7 @@ image: node:20
 before_script: []
 pages:
   script:
+    - npm add -D vitepress
     - npm run build
   artifacts:
     paths:
