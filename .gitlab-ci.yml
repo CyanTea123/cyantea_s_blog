@@ -27,7 +27,6 @@ build-job:       # This job runs in the build stage, which runs first.
   script:
     - npm add -D vitepress
     - npm run build
-    - mkdir public
     - rm -rf public/*
     - mv .vitepress/dist/* public
   artifacts:
