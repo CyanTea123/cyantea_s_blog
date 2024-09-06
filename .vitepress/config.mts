@@ -48,8 +48,8 @@ export default defineConfigWithTheme<ThemeConfig>({
   sitemap: {
     hostname: 'https://vitepress-theme-bluearchive.vercel.app',
   },
-  title: "peg195's 个人博客",
-  description: "peg195's 个人博客",
+  title: "peg195's blog",
+  description: "peg195's blog",
   themeConfig: {
     // navBar
     menuList: [
@@ -58,8 +58,8 @@ export default defineConfigWithTheme<ThemeConfig>({
     ],
 
     //banner区配置
-    name: "peg195's 个人博客",
-    welcomeText: '为折腾而折腾',
+    name: "peg195's blog",
+    welcomeText: '生命不息,折腾不止',
     motto: '所在皆是奇迹的起点。',
     social: [
       { icon: 'github', url: 'https://jihulab.com/peg' },
@@ -72,7 +72,7 @@ export default defineConfigWithTheme<ThemeConfig>({
     footerName: 'peg195',
     poweredList: [
       { name: 'VitePress', url: 'https://github.com/vuejs/vitepress' },
-      { name: 'Netlify', url: 'https://netlify.com' },
+      { name: 'Gitlab CI', url: 'https://gitlab.com' },
       { name: 'MCICP备0000000014号', url: 'https://icp.mcsite.cc/mc/0000000014.html' },
       { name: '萌ICP备20230195号', url: 'https://icp.gov.moe/?keyword=20230195' },
     ],
