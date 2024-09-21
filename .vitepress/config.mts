@@ -72,7 +72,8 @@ export default defineConfigWithTheme<ThemeConfig>({
     footerName: 'peg195',
     poweredList: [
       { name: 'VitePress', url: 'https://github.com/vuejs/vitepress' },
-      { name: 'Gitlab CI', url: 'https://gitlab.com' },
+      { name: 'Gitlab', url: 'https://gitlab.com' },
+      { name: 'CC BY-SA 4.0', url: 'https://creativecommons.org/licenses/by-sa/4.0/' },
       { name: 'MCICP备0000000014号', url: 'https://icp.mcsite.cc/mc/0000000014.html' },
       { name: '萌ICP备20230195号', url: 'https://icp.gov.moe/?keyword=20230195' },
     ],
