@@ -1,6 +1,6 @@
 ---
 title: 如何给Frp隧道配置SSL
-date: 2024-08-29
+date: 2024-10-15
 tags: [Frp,SSL,Frp配置SSL,frp https,https]
 head:
   - - meta
