@@ -1,15 +1,16 @@
 <template>
+  <Splash></Splash>
   <template v-if="!page.isNotFound">
-    <main style="min-height: 100vh">
+    <main>
       <Navbar></Navbar>
       <Banner>
-        <transition name="opac" mode="out-in">
-          <WelcomeBox v-if="page.filePath === 'index.md'"></WelcomeBox>
+        <transition name="fade" mode="out-in">
+          <WelcomeBox v-if="!state.splashLoading && page.filePath === 'index.md'"></WelcomeBox>
           <Tags v-else-if="page.filePath === 'tags/index.md'"></Tags>
           <PostInnerBanner v-else></PostInnerBanner>
         </transition>
       </Banner>
-      <transition name="opac" mode="out-in">
+      <transition name="fade" mode="out-in">
         <PostsList
           v-if="page.filePath === 'index.md' || page.filePath === 'tags/index.md'"
         ></PostsList>
@@ -17,21 +18,27 @@
       </transition>
     </main>
     <Footer></Footer>
-    <Fireworks></Fireworks>
-    <SpinePlayer></SpinePlayer>
+    <Fireworks v-if="state.fireworksEnabled"></Fireworks>
+    <SpinePlayer v-show="state.SpinePlayerEnabled"></SpinePlayer>
     <ToTop></ToTop>
+    <!-- 背景音乐元素 -->
+    <audio id="background-music" loop>
+      <source src="./assets/banner/bgm.mp3" type="audio/mpeg" />
+    </audio>
   </template>
   <NotFound v-else></NotFound>
 </template>
+
 <script setup lang="ts">
 // 组件导入
-import Navbar from './components/Navbar.vue'
+import Splash from './components/Splash.vue'
+import Navbar from './components/Navbar/index.vue'
 import Banner from './components/Banner.vue'
-import WelcomeBox from './components/Welcome-box.vue'
+import WelcomeBox from './components/Welcome-Box.vue'
 import PostsList from './components/Posts-List.vue'
 import Tags from './components/Tags.vue'
 import PostViewer from './components/Post-Viewer.vue'
-import PostInnerBanner from './components/Post-innerBanner.vue'
+import PostInnerBanner from './components/Post-InnerBanner.vue'
 import NotFound from './components/NotFound.vue'
 import ToTop from './components/ToTop.vue'
 import Fireworks from './components/Fireworks.vue'
@@ -41,16 +48,19 @@ import SpinePlayer from './components/Spine-Player/index.vue'
 // 路径切换
 import { useData } from 'vitepress'
 const { page } = useData()
+
+import { useStore } from './store'
+const { state } = useStore()
 </script>
 
 <style lang="less">
-.opac-enter-active,
-.opac-leave-active {
-  transition: all 0.2s;
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
 }
 
-.opac-enter-from,
-.opac-leave-to {
+.fade-enter-from,
+.fade-leave-to {
   opacity: 0;
 }
 
@@ -71,6 +81,7 @@ body {
   background-position: center;
   background-attachment: fixed;
   overflow-y: scroll;
+  overflow-x: hidden;
   color: var(--font-color-grey);
   font-family: 'Blueaka', sans-serif;
 }
