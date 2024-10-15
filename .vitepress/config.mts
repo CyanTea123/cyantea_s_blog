@@ -79,11 +79,11 @@ export default defineConfigWithTheme<ThemeConfig>({
     ],
 
     //gitalk配置
-    clientID: '#',
-    clientSecret: '#',
-    repo: '#',
-    owner: 'peg195',
-    admin: ['peg195'],
+    clientID: 'Ov23li8PDfjmbibzbIfK',
+    clientSecret: 'f4651eb2e1db0697a545bb3df0f0c0bd799ca77a',
+    repo: 'peg195-blog',
+    owner: 'peg195-dfgg',
+    admin: ['peg195-dfgg'],
   },
   markdown: {
     theme: 'github-light',
