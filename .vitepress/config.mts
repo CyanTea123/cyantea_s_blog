@@ -80,17 +80,21 @@ export default defineConfigWithTheme<ThemeConfig>({
     welcomeText: '生命不息，折腾不止',
     motto: ['所在皆是奇迹的起点。', '何気ない日常で、ほんの少しの奇跡を見つける物語。'],
     social: [
-      { icon: 'github', url: 'https://github.com/' },
+      { icon: 'github', url: 'https://github.com/peg195-dfgg' },
       { icon: 'bilibili', url: 'https://www.bilibili.com/' },
-      { icon: 'qq', url: 'https://im.qq.com/index/' },
-      { icon: 'wechat', url: 'https://weixin.qq.com/' },
+      { icon: 'qq', url: '#' },
+      { icon: 'wechat', url: '#' },
     ],
 
     //footer配置
-    footerName: 'Sensei',
+    footerName: 'peg195',
     poweredList: [
       { name: 'VitePress', url: 'https://github.com/vuejs/vitepress' },
-      { name: 'GitHub Pages', url: 'https://docs.github.com/zh/pages' },
+      { name: 'Gitlab', url: 'https://gitlab.com' },
+      { name: 'CC BY-SA 4.0', url: 'https://creativecommons.org/licenses/by-sa/4.0/' },
+      { name: 'MCICP备0000000014号', url: 'https://icp.mcsite.cc/mc/0000000014.html' },
+      { name: '萌ICP备20230195号', url: 'https://icp.gov.moe/?keyword=20230195' },
+
     ],
 
     //gitalk配置
