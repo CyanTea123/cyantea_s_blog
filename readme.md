@@ -22,6 +22,7 @@ BA 主题博客，基于 VitePress，绝赞画饼中
 - [x] 底栏
 - [x] 优化 404
 - [x] Arona 的 spine 模型
+- [x] 首屏加载动画
 
 ## 画饼
 
@@ -29,30 +30,62 @@ BA 主题博客，基于 VitePress，绝赞画饼中
 - [ ] 夜间模式
 - [ ] 为 Arona 添加更多交互
 - [ ] 让点击烟花更还原游戏效果
-- [ ] 首屏加载动画
+- [ ] 骨架屏
 - [ ] more...
 
 ## 主题配置
 
-首页头图和头像在`.vitepress\theme\assets\banner`
+**音乐** **首页背景** **头像**在`.vitepress/theme/assets/banner`
+
+**配置文件**在`.vitepress/config.mts`
+
+```ts
+export default defineConfigWithTheme<ThemeConfig>({
+  //...
+
+  // 站点标题配置
+  title: "Sensei's 部落格",
+  description: "Sensei's 部落格",
+
+  themeConfig: {
+    //banner区配置
+    videoBanner: false, //是否显示视频背景
+    name: "Sensei's 部落格", //首页标题
+    welcomeText: 'Hello, VitePress', //首页欢迎语
+    motto: ['和你的日常，就是奇迹', '何気ない日常で、ほんの少しの奇跡を見つける物語。'], //首页motto
+    social: [ //社交链接配置
+      { icon: 'github', url: 'https://github.com/' },
+      { icon: 'bilibili', url: 'https://www.bilibili.com/' },
+      { icon: 'qq', url: 'https://im.qq.com/index/' },
+      { icon: 'wechat', url: 'https://weixin.qq.com/' },
+    ],
+
+    //footer配置
+    footerName: 'Sensei',
+    poweredList: [
+      { name: 'VitePress', url: 'https://github.com/vuejs/vitepress' },
+      { name: 'GitHub Pages', url: 'https://docs.github.com/zh/pages' },
+    ],
+
+    //gitalk配置
+    clientID: 'YourClientID',
+    clientSecret: 'YourClientSecret',
+    repo: 'YourRepoName',
+    owner: 'YourGitHubName',
+    admin: ['YourGitHubName'],
+  }
+}),
+```
+
+## 站点地图配置(SEO 优化)
 
 配置文件在`.vitepress/config.mts`
 
 ```ts
-export interface ThemeConfig {
-  //banner
-  name: string // 首页名字
-  welcomeText: string // 首页问候语
-  motto: string // 首页签名
-  social: { icon: string; url: string }[] // 社交平台，icon可选bilibili，github，tw，weibo, wechat, qq, netease_music
-
-  //gitalk配置
-  clientID: string
-  clientSecret: string
-  repo: string
-  owner: string
-  admin: string[]
-}
+  // 生成站点地图
+  sitemap: {
+    hostname: 'https://vitepress-theme-bluearchive.vercel.app', //替换为你自己的域名
+  }
 ```
 
 ## 文章配置

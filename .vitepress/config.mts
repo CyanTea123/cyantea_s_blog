@@ -1,12 +1,14 @@
 import { defineConfigWithTheme } from 'vitepress'
+import mdItCustomAttrs from 'markdown-it-custom-attrs'
 export interface ThemeConfig {
   //navBar
   menuList: { name: string; url: string }[]
 
   //banner
+  videoBanner: boolean
   name: string
   welcomeText: string
-  motto: string
+  motto: string[]
   social: { icon: string; url: string }[]
 
   //footer
@@ -43,13 +45,28 @@ export default defineConfigWithTheme<ThemeConfig>({
         href: '/font/Blueaka_Bold/Blueaka_Bold.css',
       },
     ],
+    // 图片灯箱
+    [
+      'link',
+      {
+        rel: 'stylesheet',
+        href: 'https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css',
+      },
+    ],
+    [
+      'script',
+      {
+        src: 'https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js',
+      },
+    ],
   ],
   ignoreDeadLinks: true,
-  sitemap: {
-    hostname: 'https://vitepress-theme-bluearchive.vercel.app',
-  },
-  title: "peg195's blog",
-  description: "peg195's blog",
+  // 生成站点地图
+  // sitemap: {
+  //   hostname: 'https://vitepress-theme-bluearchive.vercel.app',
+  // },
+  title: "Sensei's 部落格",
+  description: "Sensei's 部落格",
   themeConfig: {
     // navBar
     menuList: [
@@ -58,36 +75,40 @@ export default defineConfigWithTheme<ThemeConfig>({
     ],
 
     //banner区配置
-    name: "peg195's blog",
-    welcomeText: '生命不息,折腾不止',
-    motto: '所在皆是奇迹的起点。',
+    videoBanner: false,
+    name: "Sensei's 部落格",
+    welcomeText: 'Hello, VitePress',
+    motto: ['和你的日常，就是奇迹', '何気ない日常で、ほんの少しの奇跡を見つける物語。'],
     social: [
-      { icon: 'github', url: 'https://jihulab.com/peg' },
-      { icon: 'bilibili', url: 'https://space.bilibili.com/2068641947' },
-      { icon: 'qq', url: '#' },
-      { icon: 'wechat', url: '#' },
+      { icon: 'github', url: 'https://github.com/' },
+      { icon: 'bilibili', url: 'https://www.bilibili.com/' },
+      { icon: 'qq', url: 'https://im.qq.com/index/' },
+      { icon: 'wechat', url: 'https://weixin.qq.com/' },
     ],
 
     //footer配置
-    footerName: 'peg195',
+    footerName: 'Sensei',
     poweredList: [
       { name: 'VitePress', url: 'https://github.com/vuejs/vitepress' },
-      { name: 'Gitlab', url: 'https://gitlab.com' },
-      { name: 'CC BY-SA 4.0', url: 'https://creativecommons.org/licenses/by-sa/4.0/' },
-      { name: 'MCICP备0000000014号', url: 'https://icp.mcsite.cc/mc/0000000014.html' },
-      { name: '萌ICP备20230195号', url: 'https://icp.gov.moe/?keyword=20230195' },
+      { name: 'GitHub Pages', url: 'https://docs.github.com/zh/pages' },
     ],
 
     //gitalk配置
-    clientID: 'Ov23li8PDfjmbibzbIfK',
-    clientSecret: 'f4651eb2e1db0697a545bb3df0f0c0bd799ca77a',
-    repo: 'peg195-blog',
-    owner: 'peg195-dfgg',
-    admin: ['peg195-dfgg'],
+    clientID: 'Ov23lia9U9wFN3WMyoKK',
+    clientSecret: 'b2418ab598c188c43a247c99e728dd2735d58c3b',
+    repo: 'vitepress-theme-bluearchive',
+    owner: 'Alittfre',
+    admin: ['Alittfre'],
   },
   markdown: {
     theme: 'github-light',
     lineNumbers: true,
     math: true,
+    config: (md) => {
+      // use more markdown-it plugins!
+      md.use(mdItCustomAttrs, 'image', {
+        'data-fancybox': 'gallery',
+      })
+    },
   },
 })
