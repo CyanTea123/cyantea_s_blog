@@ -65,8 +65,8 @@ export default defineConfigWithTheme<ThemeConfig>({
   // sitemap: {
   //   hostname: 'https://vitepress-theme-bluearchive.vercel.app',
   // },
-  title: "Sensei's 部落格",
-  description: "Sensei's 部落格",
+  title: "peg195's blog",
+  description: "peg195's blog",
   themeConfig: {
     // navBar
     menuList: [
@@ -76,9 +76,9 @@ export default defineConfigWithTheme<ThemeConfig>({
 
     //banner区配置
     videoBanner: false,
-    name: "Sensei's 部落格",
-    welcomeText: 'Hello, VitePress',
-    motto: ['和你的日常，就是奇迹', '何気ない日常で、ほんの少しの奇跡を見つける物語。'],
+    name: "peg195's blog",
+    welcomeText: '生命不息，折腾不止',
+    motto: ['所在皆是奇迹的起点。', '何気ない日常で、ほんの少しの奇跡を見つける物語。'],
     social: [
       { icon: 'github', url: 'https://github.com/' },
       { icon: 'bilibili', url: 'https://www.bilibili.com/' },
@@ -94,11 +94,11 @@ export default defineConfigWithTheme<ThemeConfig>({
     ],
 
     //gitalk配置
-    clientID: 'Ov23lia9U9wFN3WMyoKK',
-    clientSecret: 'b2418ab598c188c43a247c99e728dd2735d58c3b',
-    repo: 'vitepress-theme-bluearchive',
-    owner: 'Alittfre',
-    admin: ['Alittfre'],
+    clientID: 'Ov23li8PDfjmbibzbIfK',
+    clientSecret: '1fb1febf049d17991864ad77b09bcfbc8c61e5be',
+    repo: 'peg195-blog',
+    owner: 'peg195-dfgg',
+    admin: ['peg195-dfgg'],
   },
   markdown: {
     theme: 'github-light',
