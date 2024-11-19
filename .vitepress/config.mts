@@ -50,23 +50,23 @@ export default defineConfigWithTheme<ThemeConfig>({
       'link',
       {
         rel: 'stylesheet',
-        href: 'https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css',
+        href: 'https://cdn.bootcdn.net/ajax/libs/fancyapps-ui/4.0.31/fancybox.css',
       },
     ],
     [
       'script',
       {
-        src: 'https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js',
+        src: 'https://cdn.bootcdn.net/ajax/libs/fancyapps-ui/4.0.31/fancybox.umd.js',
       },
     ],
   ],
   ignoreDeadLinks: true,
   // 生成站点地图
   // sitemap: {
-  //   hostname: 'https://vitepress-theme-bluearchive.vercel.app',
+  //   hostname: 'https://ushio-noa.ip-dynamic.org',
   // },
-  title: "peg195's blog",
-  description: "peg195's blog",
+  title: "CyanTea's blog",
+  description: "CyanTea's blog",
   themeConfig: {
     // navBar
     menuList: [
@@ -87,10 +87,10 @@ export default defineConfigWithTheme<ThemeConfig>({
     ],
 
     //footer配置
-    footerName: 'peg195',
+    footerName: 'CyanTea',
     poweredList: [
-      { name: 'VitePress', url: 'https://github.com/vuejs/vitepress' },
-      { name: 'Gitlab', url: 'https://gitlab.com' },
+      { name: 'FreeDNS', url: 'https://freedns.afraid.org/' },
+      { name: 'Vercel', url: 'https://vercel.com' },
       { name: 'CC BY-SA 4.0', url: 'https://creativecommons.org/licenses/by-sa/4.0/' },
       { name: 'MCICP备0000000014号', url: 'https://icp.mcsite.cc/mc/0000000014.html' },
       { name: '萌ICP备20230195号', url: 'https://icp.gov.moe/?keyword=20230195' },
