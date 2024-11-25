@@ -81,8 +81,8 @@ export default defineConfigWithTheme<ThemeConfig>({
     motto: ['所在皆是奇迹的起点。', '何気ない日常で、ほんの少しの奇跡を見つける物語。'],
     social: [
       { icon: 'github', url: 'https://github.com/peg195-dfgg' },
-      { icon: 'bilibili', url: 'https://www.bilibili.com/' },
-      { icon: 'qq', url: '#' },
+      { icon: 'bilibili', url: 'https://space.bilibili.com/2068641947' },
+      { icon: 'qq', url: 'https://qm.qq.com/q/Dlt4aYuXlI' },
       { icon: 'wechat', url: '#' },
     ],
 
