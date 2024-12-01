@@ -76,7 +76,7 @@ export default defineConfigWithTheme<ThemeConfig>({
 
     //banner区配置
     videoBanner: false,
-    name: "peg195's blog",
+    name: "CyanTea's blog",
     welcomeText: '生命不息，折腾不止',
     motto: ['所在皆是奇迹的起点。', '何気ない日常で、ほんの少しの奇跡を見つける物語。'],
     social: [
